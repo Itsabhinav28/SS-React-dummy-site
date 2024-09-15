@@ -14,14 +14,11 @@ Ensure you have [Node.js](https://nodejs.org/) (v14 or later) and [npm](https://
 
 Clone the repo and navigate into the directory:
 
-```bash
-2. Install Dependencies
+### 2. Install Dependencies
 Run the following command to install dependencies:
-
-bash
-Copy code
 npm install
-3. Start the Development Server
+
+### 3. Start the Development Server
 Start the development server with:
 
 bash
@@ -29,7 +26,7 @@ Copy code
 npm start
 The application will open in your browser at http://localhost:3000.
 
-4. Build for Production
+### 4. Build for Production
 To create a production build, run:
 
 bash
