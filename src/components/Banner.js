@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/WhatsApp_Image_2024-09-09_at_7.06.20_PM__1_-removebg-preview.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,8 +11,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
-  const period = 2000;
+  const toRotate = [ "Society", "Family" ];
+  const period = 200;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -55,10 +55,13 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                {/* <span className="tagline">Welcome to StartupSphere!</span> */}
+                <h1>{`Welcome to StartupSphere `} <span className="txt-rotate" dataPeriod="200" data-rotate='[ "a Society", "a Community" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Startup Sphere Society is a college community fostering innovation, networking, and entrepreneurship through events, workshops, and mentorship opportunities.</p>
+                  <a href="https://linktr.ee/StartupShere" target="_blank">
+                  <button>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  </a>
+
               </div>}
             </TrackVisibility>
           </Col>
